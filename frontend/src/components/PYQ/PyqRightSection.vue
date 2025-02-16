@@ -1,14 +1,5 @@
 <template>
   <div class="container">
-
-<!-- Main Content Section -->
-    <div class="content">
-      <h2>BPSC TRE 4.0 Previous Year Question Papers PDf Download</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et tenetur fuga repudiandae, non distinctio ea quos aliquam iusto is officia minima nesciunt blanditiis porro qui corporis assumenda voluptatem! Sint tatum amet totam modi!</p>
-    </div>
-
-
-
 <!-- Sidebar with Latest News -->
 
     <div class="sidebar">
@@ -244,14 +235,13 @@ export default {
   /* gap: 70px; */
   padding: 0 30px;
   width: 100%;
-  max-width: 100%;
 }
 
 /* Sidebar Styling */
 .sidebar {
-  width: 25%;
+  width: 100%;
   padding-right: 30px;
-  margin-top: 30vh;
+  margin-top: 3vh;
 }
 
 /* Latest News Title */

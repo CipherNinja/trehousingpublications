@@ -112,18 +112,18 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .main-content {
     padding: 2vh 5vw;
 }
 
 .content-bpsc {
-    width: 70%;
+    width: 100%;
 
 }
 
 .bpscImg img{
-    width: 90%;
+    width: 100%;
 }
 
 .content-bpsc .fourZero {
@@ -151,7 +151,7 @@ export default {
 table {
     border: 1px solid black;
     border-collapse: collapse;
-    width: 70%;
+    width: 100%;
 }
 
 table .rowData td {
