@@ -1,8 +1,14 @@
 <template>
   <Header />
+
   <PreviousYearQuestionPaper />
   <faq/>
 
+
+
+
+  <downloadAttempt />
+  <faq/>
 
 
   <Footer />
@@ -17,14 +23,21 @@ import PreviousYearQuestionPaper from 'D:/pre-treeproject/trehousingpublications
 
 
 
+import downloadAttempt from '@/components/SolvedPaper/DownloadAttempt.vue';
+
+
 export default {
   name: "SolvedPaperView",
   components: {
     Header,
     faq,
+
     PreviousYearQuestionPaper,
     
    
+
+    downloadAttempt,
+
 
     Footer,
   },
