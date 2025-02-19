@@ -1,11 +1,12 @@
 <template>
-  <div class="container">
+  <div class="p-6 max-w-6xl mx-auto">
     <!-- Header Section -->
     <h2 class="text-h">BPSC Previous Year Question Papers</h2>
     <p class="text-gray">
-      IBPS is a self-governing recruitment body that conducts recruitment in various banking organizations in India.
-      IBPS RRB Scale 3 exam is a Group A post. It is one of the most important bank examinations and is quite popular among all aspirants.
-      We are providing IBPS RRB Scale 3 memory-based question papers which will help you prepare strategically.
+      IBPS is a self-governing recruitment body, conducts recruitment in various banking organizations in India. IBPS RRB Scale 3 exam is a Group A post. IBPS RRB Scale 3 exam is one of the most important bank examinations and quite popular among all the aspirants. IBPS RRB Scale 3 is a single-day exam, and the examination process is quite simple. ixamBee is offering IBPS RRB Scale 3 previous year question papers with solutions that will assist you in attaining an idea about what to expect from the IBPS RRB Scale 3 exam. We are providing IBPS RRB Scale 3 memory-based question papers which will surely help you in making a proper and productive strategy. Practice the IBPS RRB Scale 3 previous year papers and get one step closer to your dream job.
+    </p>
+    <p class="text-sec">
+      While taking the previous year's papers for IBPS RRB Scale 3 Officer if you feel a need for further guidance, then ixamBee offers an IBPS RRB Scale 3 online course which has been curated by our expert faculty. Moreover, the IBPS RRB Scale 3 Officer study material is prepared keeping the latest exam pattern and syllabus in mind.
     </p>
 
     <!-- Other Papers Section -->
@@ -32,11 +33,11 @@ export default {
     return {
       papers: [
         "BPSC Previous Year Papers",
-        "IBPS RRB Scale 3 Papers",
-        "SSC CGL Previous Year Papers",
-        "UPSC Civil Services Papers",
-        "Railway NTPC Previous Papers",
-        "State PCS Exam Papers"
+        "BPSC Previous Year Papers",
+        "BPSC Previous Year Papers",
+        "BPSC Previous Year Papers",
+        "BPSC Previous Year Papers",
+        "BPSC Previous Year Papers"
       ]
     };
   },
@@ -49,46 +50,47 @@ export default {
 </script>
 
 <style scoped>
-/* ✅ Main Container - Fully Responsive */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+body {
+  background-color: #f8f9fa;
 }
 
-/* ✅ Responsive Typography */
 .text-h, .text-o {
-  font-weight: bold;
-  font-size: 2rem;
+  font-weight: bolder;
+  font-size: larger;
   text-align: left;
   margin-bottom: 16px;
-  padding-left: 5%;
+  padding-left: 70px;
 }
 
 .text-gray {
   color: #6c757d;
-  font-size: 1.1rem;
+  font-size: 16px;
   text-align: left;
-  padding-left: 5%;
-  line-height: 1.6;
+  padding-left: 70px;
 }
 
-/* ✅ Responsive Grid Layout */
+.text-sec {
+  color: #6c757d;
+  font-size: 16px;
+  text-align: left;
+  padding-left: 70px;
+}
+
 .papers-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
-  padding: 10px 5%;
+  justify-content: left;
+  padding-left: 70px;
 }
 
-/* ✅ Paper Card Design */
 .paper-card {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 350px;
-  height: 65px;
+  max-width: 320px;
+  height: 60px;
   padding: 12px;
   border-radius: 8px;
   border: 1px solid #ddd;
@@ -103,135 +105,41 @@ export default {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* ✅ Bottom Gradient */
-.paper-card::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background: linear-gradient(to right, #00008b, #0044cc);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-}
-
-/* ✅ Paper Title */
 .title {
   color: #007bff;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: bold;
 }
 
-/* ✅ Arrow Symbol */
 .arrow-symbol-container {
   position: relative;
   display: inline-block;
 }
 
 .arrow-symbol {
-  font-size: 20px;
+  font-size: 18px;
   color: blue;
   font-weight: bold;
   cursor: pointer;
 }
 
-.arrow-symbol-container:hover .arrow-symbol {
-  color: black;
-}
-
-/* ✅ Yellow Circle on Hover */
-.arrow-symbol-container:hover::before {
-  content: '';
-  position: absolute;
-  top: -4px;
-  left: -4px;
-  width: 28px;
-  height: 28px;
-  background-color: yellow;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.arrow-symbol-container:hover .arrow-symbol {
-  position: relative;
-  z-index: 1;
-}
-
-/* ✅ RESPONSIVENESS 🔹 */
-@media (max-width: 1024px) {
-  .text-h, .text-o, .text-gray {
-    padding-left: 3%;
+@media (max-width: 768px) {
+  .text-h, .text-o {
+    font-size: 1.25rem;
+    padding-left: 20px;
   }
-  
+
+  .text-gray, .text-sec {
+    font-size: 0.9rem;
+    padding-left: 20px;
+  }
+
   .papers-container {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    padding-left: 3%;
-    padding-right: 3%;
+    padding-left: 20px;
   }
 
   .paper-card {
     max-width: 100%;
-  }
-}
-
-@media (max-width: 768px) {
-  .text-h, .text-o {
-    font-size: 1.7rem;
-  }
-
-  .text-gray {
-    font-size: 1rem;
-  }
-
-  .papers-container {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
-  }
-
-  .paper-card {
-    height: 60px;
-    padding: 10px;
-  }
-
-  .title {
-    font-size: 1rem;
-  }
-
-  .arrow-symbol {
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 480px) {
-  .text-h, .text-o {
-    font-size: 1.5rem;
-  }
-
-  .text-gray {
-    font-size: 0.9rem;
-    padding-left: 2%;
-  }
-
-  .papers-container {
-    grid-template-columns: 1fr;
-    padding-left: 2%;
-    padding-right: 2%;
-  }
-
-  .paper-card {
-    height: 55px;
-    padding: 8px;
-  }
-
-  .title {
-    font-size: 0.9rem;
-  }
-
-  .arrow-symbol {
-    font-size: 16px;
   }
 }
 </style>
