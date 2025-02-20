@@ -1,4 +1,5 @@
 <template>
+
   <main>
     <Header />
     <div style="display: flex; flex-direction: row;">
@@ -14,6 +15,7 @@
     </div>
     <Footer />
   </main>
+
 </template>
 
 <script>
@@ -26,6 +28,7 @@ import TextTable from "@/components/PYQ/TextTable.vue";
 import TreFourZero from "@/components/PYQ/TreFourZero.vue";
 import PyqOverview from '@/components/PYQ/PyqOverview.vue';
 import PyqRightSection from "@/components/PYQ/PyqRightSection.vue";
+import PYQup from "@/components/PYQ/PYQup.vue"
 
 export default {
   name: "SyllabusView",
@@ -34,6 +37,7 @@ export default {
     TreFourZero,
     PyqRightSection,
     Notification,
+    PYQup,
     PyqSyPdf,
     BiharSyllabusComponent,
     TextTable,

@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+
 <!-- Sidebar with Latest News -->
 
     <div class="sidebar">
